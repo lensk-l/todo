@@ -1,0 +1,15 @@
+<div class="list-wrapper">
+    <ul class="d-flex flex-column-reverse todo-list" id="alllist">
+        {% for one in list %}
+            <li {% if one.completed %} class="completed" {% endif %}>
+                <div class="form-check"> <label class="form-check-label">
+                        <input class="checkbox" type="checkbox"  id="{{ one.id }}" name="checkbox"
+                                {% if one.completed %}  checked="checked" {% endif %}>
+                        <i class="input-helper">
+                        </i></label></div>
+                {{one.task}}
+                <a href="/delete-{{ one.id }}" data-disabled="true"><i class="remove mdi mdi-close-circle-outline" ></i></a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

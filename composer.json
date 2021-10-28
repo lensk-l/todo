@@ -1,0 +1,21 @@
+{
+    "name": "lenskaya/app",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lensk-l",
+            "email": "lensk-l@ukr.net"
+        }
+    ],
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.5",
+        "twig/twig": "^2.0",
+        "psr/log": "1.*",
+        "slim/http-cache": "^1.1"
+    }
+}

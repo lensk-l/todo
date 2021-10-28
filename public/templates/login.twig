@@ -1,0 +1,30 @@
+{% extends 'homePage.twig' %}
+
+{% block body %}
+    <section class="registration">
+        <div class="form_wrapper">
+            <div class="form_container">
+                <div class="title_container">
+                    <h2 class="login">Login</h2>
+                </div>
+                <div class="row clearfix">
+                    <div>
+                        <form method="post" action="/auth">
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope">&#128234;</i></span>
+                                <input type="email" name="email" placeholder="Email" required />
+                            </div>
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock">&#128272;</i></span>
+                                <input type="password" name="password" placeholder="Password" required />
+                            </div>
+                            <input class="button" type="submit" value="Login" />
+                            <button type="button" class="btn btn-light">
+                                <a href="/">Back to main page</a>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

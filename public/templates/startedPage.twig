@@ -1,0 +1,29 @@
+{% extends 'homePage.twig' %}
+
+{% block body %}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+    <div class="container"></div>
+    <div class="container-3">
+        <h1 class="mb-3"> If you want to try TODO list - make registration </h1>
+        <button type="button" class="btn btn-light mb-4">
+            <a href="/registration">Registration</a>
+        </button>
+        <h2 class="mb-3"> or you can LogIn </h2>
+        <div class="finger">&#9759;</div>
+        <button type="button" class="btn btn-light mb-3">
+            <a href="/login">Login</a>
+        </button>
+    </div>
+    <div class="container"></div>
+    </body>
+    </html>
+{% endblock %}

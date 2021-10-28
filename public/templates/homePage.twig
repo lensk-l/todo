@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="../style/style.css" rel="stylesheet">
+    <link href="../style/form.css" rel="stylesheet">
+
+    <title>ToDo!</title>
+</head>
+<body>
+{% block body %}
+<div class="container-1">
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="card px-3">
+                        <div class="card-body">
+                            {% include'header.twig' %}
+                           {% include 'form.twig' %}
+                            {% include'list.twig' %}
+                            {% include'btn-container.twig' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer bg-light p-3 mt-3">
+        <div class="div container">
+            <span class="text-muted">© {{ "now"|date('Y') }} Liubov Lenska</span>
+        </div>
+    </footer>
+{% endblock body %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../js/todo.js"></script>
+<script src="../js/delete.js"></script>
+<script src="../js/checked.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
